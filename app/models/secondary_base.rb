@@ -1,4 +1,4 @@
 class SecondaryBase < ActiveRecord::Base
   self.abstract_class = true
-  connects_to database: {writing: :secondary, reading: :secondary}
+  connects_to database: {writing: :secondary, reading: :secondary_replica}
 end
