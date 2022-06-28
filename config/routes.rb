@@ -1,3 +1,7 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'companies/master', to: 'companies#master'
+  get 'companies/replica', to: 'companies#replica'
+
+  get 'shipments/master', to: 'shipments#master'
+  get 'shipments/replica', to: 'shipments#replica'
 end
